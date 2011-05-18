@@ -1,0 +1,332 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000A44861383338B005A4F5B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44851383338B005A4F5B /* Cocoa.framework */; };
+		000A44901383338B005A4F5B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000A448E1383338B005A4F5B /* InfoPlist.strings */; };
+		000A44931383338B005A4F5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A44921383338B005A4F5B /* main.m */; };
+		000A44961383338B005A4F5B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 000A44941383338B005A4F5B /* Credits.rtf */; };
+		000A44991383338B005A4F5B /* QuantMyLifeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A44981383338B005A4F5B /* QuantMyLifeAppDelegate.m */; };
+		000A449C1383338B005A4F5B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 000A449A1383338B005A4F5B /* MainMenu.xib */; };
+		000A44B6138334FE005A4F5B /* Signal.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A44B5138334FE005A4F5B /* Signal.m */; };
+		000A44B91383357E005A4F5B /* InputIdleSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A44B81383357E005A4F5B /* InputIdleSignal.m */; };
+		000A44BC138335D8005A4F5B /* UtilVarints.m in Sources */ = {isa = PBXBuildFile; fileRef = 000A44BB138335D8005A4F5B /* UtilVarints.m */; };
+		000A44CF13833704005A4F5B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44CE13833704005A4F5B /* OpenGL.framework */; };
+		000A44D11383370B005A4F5B /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D01383370B005A4F5B /* QuickTime.framework */; };
+		000A44D313833713005A4F5B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D213833713005A4F5B /* Quartz.framework */; };
+		000A44D51383371A005A4F5B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D41383371A005A4F5B /* IOKit.framework */; };
+		000A44D713833725005A4F5B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D613833725005A4F5B /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000A44811383338A005A4F5B /* QuantMyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantMyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000A44851383338B005A4F5B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		000A44881383338B005A4F5B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		000A44891383338B005A4F5B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		000A448A1383338B005A4F5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		000A448D1383338B005A4F5B /* QuantMyLife-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuantMyLife-Info.plist"; sourceTree = "<group>"; };
+		000A448F1383338B005A4F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		000A44911383338B005A4F5B /* QuantMyLife-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuantMyLife-Prefix.pch"; sourceTree = "<group>"; };
+		000A44921383338B005A4F5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		000A44951383338B005A4F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		000A44971383338B005A4F5B /* QuantMyLifeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuantMyLifeAppDelegate.h; sourceTree = "<group>"; };
+		000A44981383338B005A4F5B /* QuantMyLifeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuantMyLifeAppDelegate.m; sourceTree = "<group>"; };
+		000A449B1383338B005A4F5B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		000A44B4138334FE005A4F5B /* Signal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signal.h; sourceTree = "<group>"; };
+		000A44B5138334FE005A4F5B /* Signal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signal.m; sourceTree = "<group>"; };
+		000A44B71383357E005A4F5B /* InputIdleSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputIdleSignal.h; sourceTree = "<group>"; };
+		000A44B81383357E005A4F5B /* InputIdleSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputIdleSignal.m; sourceTree = "<group>"; };
+		000A44BA138335D8005A4F5B /* UtilVarints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilVarints.h; sourceTree = "<group>"; };
+		000A44BB138335D8005A4F5B /* UtilVarints.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilVarints.m; sourceTree = "<group>"; };
+		000A44CE13833704005A4F5B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		000A44D01383370B005A4F5B /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = System/Library/Frameworks/QuickTime.framework; sourceTree = SDKROOT; };
+		000A44D213833713005A4F5B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		000A44D41383371A005A4F5B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		000A44D613833725005A4F5B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000A447E1383338A005A4F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000A44D713833725005A4F5B /* Carbon.framework in Frameworks */,
+				000A44D51383371A005A4F5B /* IOKit.framework in Frameworks */,
+				000A44D313833713005A4F5B /* Quartz.framework in Frameworks */,
+				000A44D11383370B005A4F5B /* QuickTime.framework in Frameworks */,
+				000A44CF13833704005A4F5B /* OpenGL.framework in Frameworks */,
+				000A44861383338B005A4F5B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000A44761383338A005A4F5B = {
+			isa = PBXGroup;
+			children = (
+				000A448B1383338B005A4F5B /* QuantMyLife */,
+				000A44841383338A005A4F5B /* Frameworks */,
+				000A44821383338A005A4F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000A44821383338A005A4F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000A44811383338A005A4F5B /* QuantMyLife.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000A44841383338A005A4F5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000A44851383338B005A4F5B /* Cocoa.framework */,
+				000A44871383338B005A4F5B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000A44871383338B005A4F5B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				000A44D613833725005A4F5B /* Carbon.framework */,
+				000A44D41383371A005A4F5B /* IOKit.framework */,
+				000A44D213833713005A4F5B /* Quartz.framework */,
+				000A44D01383370B005A4F5B /* QuickTime.framework */,
+				000A44CE13833704005A4F5B /* OpenGL.framework */,
+				000A44881383338B005A4F5B /* AppKit.framework */,
+				000A44891383338B005A4F5B /* CoreData.framework */,
+				000A448A1383338B005A4F5B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		000A448B1383338B005A4F5B /* QuantMyLife */ = {
+			isa = PBXGroup;
+			children = (
+				000A44B2138334E1005A4F5B /* Signals */,
+				000A44971383338B005A4F5B /* QuantMyLifeAppDelegate.h */,
+				000A44BA138335D8005A4F5B /* UtilVarints.h */,
+				000A44BB138335D8005A4F5B /* UtilVarints.m */,
+				000A44981383338B005A4F5B /* QuantMyLifeAppDelegate.m */,
+				000A449A1383338B005A4F5B /* MainMenu.xib */,
+				000A448C1383338B005A4F5B /* Supporting Files */,
+			);
+			path = QuantMyLife;
+			sourceTree = "<group>";
+		};
+		000A448C1383338B005A4F5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				000A448D1383338B005A4F5B /* QuantMyLife-Info.plist */,
+				000A448E1383338B005A4F5B /* InfoPlist.strings */,
+				000A44911383338B005A4F5B /* QuantMyLife-Prefix.pch */,
+				000A44921383338B005A4F5B /* main.m */,
+				000A44941383338B005A4F5B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		000A44B2138334E1005A4F5B /* Signals */ = {
+			isa = PBXGroup;
+			children = (
+				000A44B4138334FE005A4F5B /* Signal.h */,
+				000A44B5138334FE005A4F5B /* Signal.m */,
+				000A44B71383357E005A4F5B /* InputIdleSignal.h */,
+				000A44B81383357E005A4F5B /* InputIdleSignal.m */,
+			);
+			name = Signals;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000A44801383338A005A4F5B /* QuantMyLife */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000A449F1383338B005A4F5B /* Build configuration list for PBXNativeTarget "QuantMyLife" */;
+			buildPhases = (
+				000A447D1383338A005A4F5B /* Sources */,
+				000A447E1383338A005A4F5B /* Frameworks */,
+				000A447F1383338A005A4F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuantMyLife;
+			productName = QuantMyLife;
+			productReference = 000A44811383338A005A4F5B /* QuantMyLife.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000A44781383338A005A4F5B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 000A447B1383338A005A4F5B /* Build configuration list for PBXProject "QuantMyLife" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 000A44761383338A005A4F5B;
+			productRefGroup = 000A44821383338A005A4F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000A44801383338A005A4F5B /* QuantMyLife */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000A447F1383338A005A4F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000A44901383338B005A4F5B /* InfoPlist.strings in Resources */,
+				000A44961383338B005A4F5B /* Credits.rtf in Resources */,
+				000A449C1383338B005A4F5B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000A447D1383338A005A4F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000A44931383338B005A4F5B /* main.m in Sources */,
+				000A44991383338B005A4F5B /* QuantMyLifeAppDelegate.m in Sources */,
+				000A44B6138334FE005A4F5B /* Signal.m in Sources */,
+				000A44B91383357E005A4F5B /* InputIdleSignal.m in Sources */,
+				000A44BC138335D8005A4F5B /* UtilVarints.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000A448E1383338B005A4F5B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000A448F1383338B005A4F5B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		000A44941383338B005A4F5B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000A44951383338B005A4F5B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		000A449A1383338B005A4F5B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				000A449B1383338B005A4F5B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		000A449D1383338B005A4F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		000A449E1383338B005A4F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		000A44A01383338B005A4F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuantMyLife/QuantMyLife-Prefix.pch";
+				INFOPLIST_FILE = "QuantMyLife/QuantMyLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		000A44A11383338B005A4F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuantMyLife/QuantMyLife-Prefix.pch";
+				INFOPLIST_FILE = "QuantMyLife/QuantMyLife-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000A447B1383338A005A4F5B /* Build configuration list for PBXProject "QuantMyLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000A449D1383338B005A4F5B /* Debug */,
+				000A449E1383338B005A4F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000A449F1383338B005A4F5B /* Build configuration list for PBXNativeTarget "QuantMyLife" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000A44A01383338B005A4F5B /* Debug */,
+				000A44A11383338B005A4F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000A44781383338A005A4F5B /* Project object */;
+}
