@@ -1,0 +1,6 @@
+[submodule "QuantMyLife/lib/foss-credits"]
+	path = QuantMyLife/lib/foss-credits
+	url = git@github.com:andrewschaaf/foss-credits.git
+[submodule "QuantMyLife/lib/mac-preferences"]
+	path = QuantMyLife/lib/mac-preferences
+	url = git@github.com:andrewschaaf/mac-preferences.git

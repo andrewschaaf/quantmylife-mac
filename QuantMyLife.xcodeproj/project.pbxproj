@@ -21,6 +21,11 @@
 		000A44D313833713005A4F5B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D213833713005A4F5B /* Quartz.framework */; };
 		000A44D51383371A005A4F5B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D41383371A005A4F5B /* IOKit.framework */; };
 		000A44D713833725005A4F5B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D613833725005A4F5B /* Carbon.framework */; };
+		007F2E521384102200844A40 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E081384102200844A40 /* AboutController.m */; };
+		007F2E531384102200844A40 /* AboutCreditsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E0A1384102200844A40 /* AboutCreditsController.m */; };
+		007F2E6D1384102200844A40 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E351384102200844A40 /* PreferencesController.m */; };
+		007F2E71138411BA00844A40 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007F2E70138411BA00844A40 /* WebKit.framework */; };
+		007F2E731384123800844A40 /* LICENSES.html in Resources */ = {isa = PBXBuildFile; fileRef = 007F2E721384123800844A40 /* LICENSES.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,14 @@
 		000A44D213833713005A4F5B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		000A44D41383371A005A4F5B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		000A44D613833725005A4F5B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		007F2E071384102200844A40 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		007F2E081384102200844A40 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		007F2E091384102200844A40 /* AboutCreditsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCreditsController.h; sourceTree = "<group>"; };
+		007F2E0A1384102200844A40 /* AboutCreditsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutCreditsController.m; sourceTree = "<group>"; };
+		007F2E341384102200844A40 /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		007F2E351384102200844A40 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		007F2E70138411BA00844A40 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		007F2E721384123800844A40 /* LICENSES.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LICENSES.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007F2E71138411BA00844A40 /* WebKit.framework in Frameworks */,
 				000A44D713833725005A4F5B /* Carbon.framework in Frameworks */,
 				000A44D51383371A005A4F5B /* IOKit.framework in Frameworks */,
 				000A44D313833713005A4F5B /* Quartz.framework in Frameworks */,
@@ -70,6 +84,7 @@
 		000A44761383338A005A4F5B = {
 			isa = PBXGroup;
 			children = (
+				007F2E70138411BA00844A40 /* WebKit.framework */,
 				000A448B1383338B005A4F5B /* QuantMyLife */,
 				000A44841383338A005A4F5B /* Frameworks */,
 				000A44821383338A005A4F5B /* Products */,
@@ -111,6 +126,7 @@
 		000A448B1383338B005A4F5B /* QuantMyLife */ = {
 			isa = PBXGroup;
 			children = (
+				007F2E6F1384102600844A40 /* lib */,
 				000A44B2138334E1005A4F5B /* Signals */,
 				000A44971383338B005A4F5B /* QuantMyLifeAppDelegate.h */,
 				000A44BA138335D8005A4F5B /* UtilVarints.h */,
@@ -125,6 +141,7 @@
 		000A448C1383338B005A4F5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				007F2E721384123800844A40 /* LICENSES.html */,
 				000A448D1383338B005A4F5B /* QuantMyLife-Info.plist */,
 				000A448E1383338B005A4F5B /* InfoPlist.strings */,
 				000A44911383338B005A4F5B /* QuantMyLife-Prefix.pch */,
@@ -143,6 +160,45 @@
 				000A44B81383357E005A4F5B /* InputIdleSignal.m */,
 			);
 			name = Signals;
+			sourceTree = "<group>";
+		};
+		007F2DD91384102200844A40 /* foss-credits */ = {
+			isa = PBXGroup;
+			children = (
+				007F2E061384102200844A40 /* mac */,
+			);
+			name = "foss-credits";
+			path = "lib/foss-credits";
+			sourceTree = "<group>";
+		};
+		007F2E061384102200844A40 /* mac */ = {
+			isa = PBXGroup;
+			children = (
+				007F2E071384102200844A40 /* AboutController.h */,
+				007F2E081384102200844A40 /* AboutController.m */,
+				007F2E091384102200844A40 /* AboutCreditsController.h */,
+				007F2E0A1384102200844A40 /* AboutCreditsController.m */,
+			);
+			path = mac;
+			sourceTree = "<group>";
+		};
+		007F2E0C1384102200844A40 /* mac-preferences */ = {
+			isa = PBXGroup;
+			children = (
+				007F2E341384102200844A40 /* PreferencesController.h */,
+				007F2E351384102200844A40 /* PreferencesController.m */,
+			);
+			name = "mac-preferences";
+			path = "lib/mac-preferences";
+			sourceTree = "<group>";
+		};
+		007F2E6F1384102600844A40 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				007F2DD91384102200844A40 /* foss-credits */,
+				007F2E0C1384102200844A40 /* mac-preferences */,
+			);
+			name = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +251,7 @@
 				000A44901383338B005A4F5B /* InfoPlist.strings in Resources */,
 				000A44961383338B005A4F5B /* Credits.rtf in Resources */,
 				000A449C1383338B005A4F5B /* MainMenu.xib in Resources */,
+				007F2E731384123800844A40 /* LICENSES.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +267,9 @@
 				000A44B6138334FE005A4F5B /* Signal.m in Sources */,
 				000A44B91383357E005A4F5B /* InputIdleSignal.m in Sources */,
 				000A44BC138335D8005A4F5B /* UtilVarints.m in Sources */,
+				007F2E521384102200844A40 /* AboutController.m in Sources */,
+				007F2E531384102200844A40 /* AboutCreditsController.m in Sources */,
+				007F2E6D1384102200844A40 /* PreferencesController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
