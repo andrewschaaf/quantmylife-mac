@@ -6,7 +6,12 @@
 
 @interface InputIdleSignal : Signal {
 @private
+    unsigned long long lastIdleMs;
     
+    BOOL wasActive;
+    
+    NSData *becameActive;
+    NSData *becameIdle;
 }
 
 + (unsigned long long)idleNanoseconds;

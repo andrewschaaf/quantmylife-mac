@@ -1,14 +1,18 @@
 
 #import "InputIdleSignal.h"
 
+#define INPUT_IDLE_SAMPLE_INTERVAL_MS   500
+#define INPUT_IDLE_FUDGE_MS             50
 
 @implementation InputIdleSignal
 
 - (id)init
 {
-    self = [super init];
+    self = [super initWithSlug:@"input-idle" formatVersion:1 sampleMs:INPUT_IDLE_SAMPLE_INTERVAL_MS];
     if (self) {
-        
+        becameActive = [[UtilVarints encodeUnsignedFromUnsignedLongLong:1] retain];
+        becameIdle = [[UtilVarints encodeUnsignedFromUnsignedLongLong:2] retain];
+        wasActive = NO;
     }
     
     return self;
@@ -23,7 +27,21 @@
 - (void)sample:(NSTimer*)timer
 {
     unsigned long long idleMs = [InputIdleSignal idleNanoseconds] / 1000000ull;
-    NSLog(@"idle: %ld", (long)idleMs);
+    
+    if (idleMs < (INPUT_IDLE_SAMPLE_INTERVAL_MS + INPUT_IDLE_FUDGE_MS)) {
+        if ( ! wasActive) {
+            [self logEvent:becameActive];
+            wasActive = YES;
+        }
+    }
+    else {
+        if (wasActive) {
+            [self logEvent:becameIdle];
+            wasActive = NO;
+        }
+    }
+    
+    lastIdleMs = idleMs;
 }
 
 
