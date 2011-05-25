@@ -4,6 +4,8 @@
 #import "InputIdleSignal.h"
 #import "MousePositionSignal.h"
 #import "FrontAppSignal.h"
+#import "FrontThingSignal.h"
+
 
 @implementation QuantMyLifeAppDelegate
 
@@ -18,6 +20,7 @@
     [signals addObject:[[InputIdleSignal alloc] init]];
     [signals addObject:[[MousePositionSignal alloc] init]];
     [signals addObject:[[FrontAppSignal alloc] init]];
+    [signals addObject:[[FrontThingSignal alloc] init]];
 }
 
 - (IBAction)showPreferences:(id)sender

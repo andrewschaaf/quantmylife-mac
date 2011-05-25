@@ -21,6 +21,7 @@
 		000A44D313833713005A4F5B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D213833713005A4F5B /* Quartz.framework */; };
 		000A44D51383371A005A4F5B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D41383371A005A4F5B /* IOKit.framework */; };
 		000A44D713833725005A4F5B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000A44D613833725005A4F5B /* Carbon.framework */; };
+		0055A956138DC56500F99C59 /* FrontThingSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 0055A955138DC56500F99C59 /* FrontThingSignal.m */; };
 		007F2E521384102200844A40 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E081384102200844A40 /* AboutController.m */; };
 		007F2E531384102200844A40 /* AboutCreditsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E0A1384102200844A40 /* AboutCreditsController.m */; };
 		007F2E6D1384102200844A40 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E351384102200844A40 /* PreferencesController.m */; };
@@ -60,6 +61,8 @@
 		000A44D213833713005A4F5B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
 		000A44D41383371A005A4F5B /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		000A44D613833725005A4F5B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		0055A954138DC56500F99C59 /* FrontThingSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontThingSignal.h; sourceTree = "<group>"; };
+		0055A955138DC56500F99C59 /* FrontThingSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontThingSignal.m; sourceTree = "<group>"; };
 		007F2E071384102200844A40 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		007F2E081384102200844A40 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		007F2E091384102200844A40 /* AboutCreditsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutCreditsController.h; sourceTree = "<group>"; };
@@ -70,7 +73,7 @@
 		007F2E721384123800844A40 /* LICENSES.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LICENSES.html; sourceTree = SOURCE_ROOT; };
 		00AC412E138D2F560031EC50 /* MousePositionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MousePositionSignal.h; sourceTree = "<group>"; };
 		00AC412F138D2F560031EC50 /* MousePositionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MousePositionSignal.m; sourceTree = "<group>"; };
-		00AC4132138D31EF0031EC50 /* FrontAppSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FrontAppSignal.h; sourceTree = "<group>"; };
+		00AC4132138D31EF0031EC50 /* FrontAppSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrontAppSignal.h; sourceTree = "<group>"; };
 		00AC4133138D31EF0031EC50 /* FrontAppSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontAppSignal.m; sourceTree = "<group>"; };
 		00AC4136138D32F10031EC50 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		00AC4137138D32F10031EC50 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 				000A44B71383357E005A4F5B /* InputIdleSignal.h */,
 				00AC412E138D2F560031EC50 /* MousePositionSignal.h */,
 				00AC4132138D31EF0031EC50 /* FrontAppSignal.h */,
+				0055A954138DC56500F99C59 /* FrontThingSignal.h */,
+				0055A955138DC56500F99C59 /* FrontThingSignal.m */,
 				00AC4133138D31EF0031EC50 /* FrontAppSignal.m */,
 				00AC412F138D2F560031EC50 /* MousePositionSignal.m */,
 				000A44B81383357E005A4F5B /* InputIdleSignal.m */,
@@ -323,6 +328,7 @@
 				00AC4143138D32F10031EC50 /* SBJsonBase.m in Sources */,
 				00AC4144138D32F10031EC50 /* SBJsonParser.m in Sources */,
 				00AC4145138D32F10031EC50 /* SBJsonWriter.m in Sources */,
+				0055A956138DC56500F99C59 /* FrontThingSignal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
