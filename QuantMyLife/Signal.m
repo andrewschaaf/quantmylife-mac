@@ -9,10 +9,20 @@
     self = [super init];
     if (self) {
         
+        NSString *qmlDirName;
+        if ([[[NSBundle mainBundle] bundlePath] isEqualToString:@"/Applications/QuantMyLife.app"]) {
+            qmlDirName = @"QuantMyLife";
+        }
+        else {
+            NSLog(@"Dev mode.");
+            qmlDirName = @"QuantMyLife-dev";
+        }
+        
         // Create signalDir if needed
         NSError *err;
-        NSString *signalDir = [NSString stringWithFormat:@"%@/QuantMyLife/signals/%@",
+        NSString *signalDir = [NSString stringWithFormat:@"%@/%@/signals/%@",
                                     [@"~/Library/Application Support" stringByExpandingTildeInPath],
+                                    qmlDirName,
                                     slug];
         [[NSFileManager defaultManager]
                  createDirectoryAtPath:signalDir
