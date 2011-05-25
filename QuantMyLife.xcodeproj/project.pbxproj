@@ -26,6 +26,7 @@
 		007F2E6D1384102200844A40 /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007F2E351384102200844A40 /* PreferencesController.m */; };
 		007F2E71138411BA00844A40 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007F2E70138411BA00844A40 /* WebKit.framework */; };
 		007F2E731384123800844A40 /* LICENSES.html in Resources */ = {isa = PBXBuildFile; fileRef = 007F2E721384123800844A40 /* LICENSES.html */; };
+		00AC4130138D2F560031EC50 /* MousePositionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC412F138D2F560031EC50 /* MousePositionSignal.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		007F2E351384102200844A40 /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
 		007F2E70138411BA00844A40 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		007F2E721384123800844A40 /* LICENSES.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LICENSES.html; sourceTree = SOURCE_ROOT; };
+		00AC412E138D2F560031EC50 /* MousePositionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MousePositionSignal.h; sourceTree = "<group>"; };
+		00AC412F138D2F560031EC50 /* MousePositionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MousePositionSignal.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +160,8 @@
 				000A44B4138334FE005A4F5B /* Signal.h */,
 				000A44B5138334FE005A4F5B /* Signal.m */,
 				000A44B71383357E005A4F5B /* InputIdleSignal.h */,
+				00AC412E138D2F560031EC50 /* MousePositionSignal.h */,
+				00AC412F138D2F560031EC50 /* MousePositionSignal.m */,
 				000A44B81383357E005A4F5B /* InputIdleSignal.m */,
 			);
 			name = Signals;
@@ -270,6 +275,7 @@
 				007F2E521384102200844A40 /* AboutController.m in Sources */,
 				007F2E531384102200844A40 /* AboutCreditsController.m in Sources */,
 				007F2E6D1384102200844A40 /* PreferencesController.m in Sources */,
+				00AC4130138D2F560031EC50 /* MousePositionSignal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

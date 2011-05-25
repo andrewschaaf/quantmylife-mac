@@ -4,8 +4,6 @@
 #import "AboutController.h"
 #import "PreferencesController.h"
 
-#import "InputIdleSignal.h"
-
 
 @interface QuantMyLifeAppDelegate : NSObject <NSApplicationDelegate> {
 @private
