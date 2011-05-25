@@ -27,6 +27,12 @@
 		007F2E71138411BA00844A40 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007F2E70138411BA00844A40 /* WebKit.framework */; };
 		007F2E731384123800844A40 /* LICENSES.html in Resources */ = {isa = PBXBuildFile; fileRef = 007F2E721384123800844A40 /* LICENSES.html */; };
 		00AC4130138D2F560031EC50 /* MousePositionSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC412F138D2F560031EC50 /* MousePositionSignal.m */; };
+		00AC4134138D31EF0031EC50 /* FrontAppSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC4133138D31EF0031EC50 /* FrontAppSignal.m */; };
+		00AC4141138D32F10031EC50 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC4138138D32F10031EC50 /* NSObject+SBJSON.m */; };
+		00AC4142138D32F10031EC50 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC413A138D32F10031EC50 /* NSString+SBJSON.m */; };
+		00AC4143138D32F10031EC50 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC413C138D32F10031EC50 /* SBJsonBase.m */; };
+		00AC4144138D32F10031EC50 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC413E138D32F10031EC50 /* SBJsonParser.m */; };
+		00AC4145138D32F10031EC50 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC4140138D32F10031EC50 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +70,19 @@
 		007F2E721384123800844A40 /* LICENSES.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LICENSES.html; sourceTree = SOURCE_ROOT; };
 		00AC412E138D2F560031EC50 /* MousePositionSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MousePositionSignal.h; sourceTree = "<group>"; };
 		00AC412F138D2F560031EC50 /* MousePositionSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MousePositionSignal.m; sourceTree = "<group>"; };
+		00AC4132138D31EF0031EC50 /* FrontAppSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; path = FrontAppSignal.h; sourceTree = "<group>"; };
+		00AC4133138D31EF0031EC50 /* FrontAppSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrontAppSignal.m; sourceTree = "<group>"; };
+		00AC4136138D32F10031EC50 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		00AC4137138D32F10031EC50 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		00AC4138138D32F10031EC50 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		00AC4139138D32F10031EC50 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		00AC413A138D32F10031EC50 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		00AC413B138D32F10031EC50 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		00AC413C138D32F10031EC50 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		00AC413D138D32F10031EC50 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		00AC413E138D32F10031EC50 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		00AC413F138D32F10031EC50 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		00AC4140138D32F10031EC50 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +180,8 @@
 				000A44B5138334FE005A4F5B /* Signal.m */,
 				000A44B71383357E005A4F5B /* InputIdleSignal.h */,
 				00AC412E138D2F560031EC50 /* MousePositionSignal.h */,
+				00AC4132138D31EF0031EC50 /* FrontAppSignal.h */,
+				00AC4133138D31EF0031EC50 /* FrontAppSignal.m */,
 				00AC412F138D2F560031EC50 /* MousePositionSignal.m */,
 				000A44B81383357E005A4F5B /* InputIdleSignal.m */,
 			);
@@ -200,10 +221,30 @@
 		007F2E6F1384102600844A40 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				00AC4135138D32F10031EC50 /* JSON */,
 				007F2DD91384102200844A40 /* foss-credits */,
 				007F2E0C1384102200844A40 /* mac-preferences */,
 			);
 			name = lib;
+			sourceTree = "<group>";
+		};
+		00AC4135138D32F10031EC50 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				00AC4136138D32F10031EC50 /* JSON.h */,
+				00AC4137138D32F10031EC50 /* NSObject+SBJSON.h */,
+				00AC4138138D32F10031EC50 /* NSObject+SBJSON.m */,
+				00AC4139138D32F10031EC50 /* NSString+SBJSON.h */,
+				00AC413A138D32F10031EC50 /* NSString+SBJSON.m */,
+				00AC413B138D32F10031EC50 /* SBJsonBase.h */,
+				00AC413C138D32F10031EC50 /* SBJsonBase.m */,
+				00AC413D138D32F10031EC50 /* SBJsonParser.h */,
+				00AC413E138D32F10031EC50 /* SBJsonParser.m */,
+				00AC413F138D32F10031EC50 /* SBJsonWriter.h */,
+				00AC4140138D32F10031EC50 /* SBJsonWriter.m */,
+			);
+			name = JSON;
+			path = lib/JSON;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +317,12 @@
 				007F2E531384102200844A40 /* AboutCreditsController.m in Sources */,
 				007F2E6D1384102200844A40 /* PreferencesController.m in Sources */,
 				00AC4130138D2F560031EC50 /* MousePositionSignal.m in Sources */,
+				00AC4134138D31EF0031EC50 /* FrontAppSignal.m in Sources */,
+				00AC4141138D32F10031EC50 /* NSObject+SBJSON.m in Sources */,
+				00AC4142138D32F10031EC50 /* NSString+SBJSON.m in Sources */,
+				00AC4143138D32F10031EC50 /* SBJsonBase.m in Sources */,
+				00AC4144138D32F10031EC50 /* SBJsonParser.m in Sources */,
+				00AC4145138D32F10031EC50 /* SBJsonWriter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
