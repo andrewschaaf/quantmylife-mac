@@ -34,7 +34,24 @@
 		00AC4143138D32F10031EC50 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC413C138D32F10031EC50 /* SBJsonBase.m */; };
 		00AC4144138D32F10031EC50 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC413E138D32F10031EC50 /* SBJsonParser.m */; };
 		00AC4145138D32F10031EC50 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00AC4140138D32F10031EC50 /* SBJsonWriter.m */; };
+		00AD38E8138E8147000E89A5 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AD38E7138E8147000E89A5 /* Sparkle.framework */; };
+		00AD38EA138E8160000E89A5 /* Sparkle.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 00AD38E9138E8160000E89A5 /* Sparkle.framework */; };
+		00AD38EC138E820D000E89A5 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 00AD38EB138E820D000E89A5 /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00AD38D3138E801E000E89A5 /* Copy Files (1 item) */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00AD38EA138E8160000E89A5 /* Sparkle.framework in Copy Files (1 item) */,
+			);
+			name = "Copy Files (1 item)";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		000A44811383338A005A4F5B /* QuantMyLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuantMyLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +103,9 @@
 		00AC413E138D32F10031EC50 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		00AC413F138D32F10031EC50 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		00AC4140138D32F10031EC50 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		00AD38E7138E8147000E89A5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = QuantMyLife/lib/Sparkle.framework; sourceTree = "<group>"; };
+		00AD38E9138E8160000E89A5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = QuantMyLife/lib/Sparkle.framework; sourceTree = "<group>"; };
+		00AD38EB138E820D000E89A5 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +120,7 @@
 				000A44D11383370B005A4F5B /* QuickTime.framework in Frameworks */,
 				000A44CF13833704005A4F5B /* OpenGL.framework in Frameworks */,
 				000A44861383338B005A4F5B /* Cocoa.framework in Frameworks */,
+				00AD38E8138E8147000E89A5 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +130,7 @@
 		000A44761383338A005A4F5B = {
 			isa = PBXGroup;
 			children = (
-				007F2E70138411BA00844A40 /* WebKit.framework */,
+				00AD38E9138E8160000E89A5 /* Sparkle.framework */,
 				000A448B1383338B005A4F5B /* QuantMyLife */,
 				000A44841383338A005A4F5B /* Frameworks */,
 				000A44821383338A005A4F5B /* Products */,
@@ -127,7 +148,7 @@
 		000A44841383338A005A4F5B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				000A44851383338B005A4F5B /* Cocoa.framework */,
+				00AD38E7138E8147000E89A5 /* Sparkle.framework */,
 				000A44871383338B005A4F5B /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -136,6 +157,8 @@
 		000A44871383338B005A4F5B /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				000A44851383338B005A4F5B /* Cocoa.framework */,
+				007F2E70138411BA00844A40 /* WebKit.framework */,
 				000A44D613833725005A4F5B /* Carbon.framework */,
 				000A44D41383371A005A4F5B /* IOKit.framework */,
 				000A44D213833713005A4F5B /* Quartz.framework */,
@@ -167,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				007F2E721384123800844A40 /* LICENSES.html */,
+				00AD38EB138E820D000E89A5 /* dsa_pub.pem */,
 				000A448D1383338B005A4F5B /* QuantMyLife-Info.plist */,
 				000A448E1383338B005A4F5B /* InfoPlist.strings */,
 				000A44911383338B005A4F5B /* QuantMyLife-Prefix.pch */,
@@ -262,6 +286,7 @@
 				000A447D1383338A005A4F5B /* Sources */,
 				000A447E1383338A005A4F5B /* Frameworks */,
 				000A447F1383338A005A4F5B /* Resources */,
+				00AD38D3138E801E000E89A5 /* Copy Files (1 item) */,
 			);
 			buildRules = (
 			);
@@ -303,6 +328,7 @@
 				000A44961383338B005A4F5B /* Credits.rtf in Resources */,
 				000A449C1383338B005A4F5B /* MainMenu.xib in Resources */,
 				007F2E731384123800844A40 /* LICENSES.html in Resources */,
+				00AD38EC138E820D000E89A5 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +425,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/QuantMyLife/lib\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/QuantMyLife\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -415,6 +447,12 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/QuantMyLife/lib\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/QuantMyLife\"",
+				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QuantMyLife/QuantMyLife-Prefix.pch";
