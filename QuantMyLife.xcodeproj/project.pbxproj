@@ -37,6 +37,7 @@
 		00AD38E8138E8147000E89A5 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00AD38E7138E8147000E89A5 /* Sparkle.framework */; };
 		00AD38EA138E8160000E89A5 /* Sparkle.framework in Copy Files (1 item) */ = {isa = PBXBuildFile; fileRef = 00AD38E9138E8160000E89A5 /* Sparkle.framework */; };
 		00AD38EC138E820D000E89A5 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 00AD38EB138E820D000E89A5 /* dsa_pub.pem */; };
+		00AD38EE138E844C000E89A5 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 00AD38ED138E844C000E89A5 /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +107,7 @@
 		00AD38E7138E8147000E89A5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = QuantMyLife/lib/Sparkle.framework; sourceTree = "<group>"; };
 		00AD38E9138E8160000E89A5 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = QuantMyLife/lib/Sparkle.framework; sourceTree = "<group>"; };
 		00AD38EB138E820D000E89A5 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		00AD38ED138E844C000E89A5 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		000A448C1383338B005A4F5B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				00AD38ED138E844C000E89A5 /* icon.icns */,
 				007F2E721384123800844A40 /* LICENSES.html */,
 				00AD38EB138E820D000E89A5 /* dsa_pub.pem */,
 				000A448D1383338B005A4F5B /* QuantMyLife-Info.plist */,
@@ -329,6 +332,7 @@
 				000A449C1383338B005A4F5B /* MainMenu.xib in Resources */,
 				007F2E731384123800844A40 /* LICENSES.html in Resources */,
 				00AD38EC138E820D000E89A5 /* dsa_pub.pem in Resources */,
+				00AD38EE138E844C000E89A5 /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
