@@ -31,7 +31,7 @@
     NSString *bundleId = [appInfo objectForKey:@"NSApplicationBundleIdentifier"];
     
     // Find main window, if any
-	AXUIElementRef appElem = AXUIElementCreateApplication(pid);
+	AXUIElementRef appElem = AXUIElementCreateApplication((pid_t)pid);
 	AXUIElementRef mainWindow = [FrontThingSignal findMainWindowOfApp:appElem];
     
     
@@ -48,7 +48,6 @@
         }
         NSString *json = [info JSONRepresentation];
         if ( ! [json isEqualToString:lastJson]) {
-            NSLog(@"JSON: %@", json);
             [self logEvent:[json dataUsingEncoding:NSUTF8StringEncoding]];
             [lastJson release];
             lastJson = [json retain];
