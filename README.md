@@ -1,6 +1,7 @@
 
+# [Overview: see quantmylife.com](http://quantmylife.com)
 
-## Signal Encoding
+# Signal Formats
 
 <pre>
 // initial utc_ms_delta: 0
